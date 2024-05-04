@@ -17,8 +17,10 @@ map('n', '<space>w', '<cmd>w<cr>')
 --
 
 map('n', '<leader>;', 'A;<esc>')
-map('n', 'vs', '<cmd>vsplit')
-map('n', 'ss', '<cmd>split')
+map('n', 'vs', ':vsplit ')
+map('n', 'ss', ':split ')
+map('n', 'vss', '<cmd>vsplit<cr>')
+map('n', 'sss', '<cmd>split<cr>')
 
 --
 --	Explorer

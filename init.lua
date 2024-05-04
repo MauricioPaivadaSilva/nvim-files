@@ -5,3 +5,5 @@
 require("config")
 require("keymap")
 require("autocmd")
+require("lazy_intaller")
+require("pluggin_manager")
