@@ -26,4 +26,4 @@ map('n', 'sss', '<cmd>split<cr>')
 --	Explorer
 --
 
-map('n', '<space>e', '<cmd>Explore<cr>')
+map('n', '<space>e', '<cmd>NvimTreeToggle<cr>')

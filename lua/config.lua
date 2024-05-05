@@ -8,6 +8,8 @@ opt.number = true
 opt.relativenumber = true
 opt.hidden = true
 opt.inccommand = "split"
+opt.tabstop = 2
+opt.shiftwidth = 2
 
 --
 --	Color Scheme
@@ -23,4 +25,4 @@ vim.cmd "colorscheme habamax"
 --	Font config
 --
 
-local font_size = 14
+local font_size = 12
