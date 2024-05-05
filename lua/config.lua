@@ -3,6 +3,7 @@
 --
 
 local opt = vim.opt
+local cmd = vim.cmd
 
 opt.number = true
 opt.relativenumber = true
@@ -10,12 +11,6 @@ opt.hidden = true
 opt.inccommand = "split"
 opt.tabstop = 2
 opt.shiftwidth = 2
-
---
---	Color Scheme
---
-
-vim.cmd "colorscheme habamax"
 
 --
 --	Leader config

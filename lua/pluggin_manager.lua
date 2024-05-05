@@ -1,7 +1,10 @@
 local lazy = require("lazy")
 
 local plugins = {
-	{ -- Nvim Tree
+	--
+	--	Nvim Tree
+	--
+	{
 		'nvim-tree/nvim-tree.lua',
 		dependencies = {
 			'nvim-tree/nvim-web-devicons'
@@ -9,7 +12,20 @@ local plugins = {
 		config = function()
 			require('nvim-tree').setup()
 		end
+	},
+
+	--
+	--	Theme Catppuccin
+	--
+	{
+		'catppuccin/nvim',
+		lazy = true,
+		name = 'catppuccin',
+		config = function()
+			require('catppuccin').setup({
+				flavour = "mocha"
+			})
+		end
 	}
 }
-
 lazy.setup(plugins)
