@@ -23,6 +23,12 @@ map('n', 'vss', '<cmd>vsplit<cr>')
 map('n', 'sss', '<cmd>split<cr>')
 
 --
+--	Rust
+--
+
+map('n', '<space>f', '<cmd>RustFmt<cr>')
+
+--
 --	Explorer
 --
 

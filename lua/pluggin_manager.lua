@@ -26,6 +26,13 @@ local plugins = {
 				flavour = "mocha"
 			})
 		end
+	},
+
+	--
+	--	rust.vim
+	--
+	{
+		"rust-lang/rust.vim"
 	}
 }
 lazy.setup(plugins)
