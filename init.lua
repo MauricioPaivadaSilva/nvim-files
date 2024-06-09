@@ -8,4 +8,4 @@ require("config.autocmd")
 require("lazy_intaller")
 require("pluggin_manager")
 
-vim.cmd.colorscheme "catppuccin"
+vim.cmd.colorscheme("catppuccin")
