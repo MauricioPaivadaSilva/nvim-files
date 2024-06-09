@@ -3,15 +3,20 @@
 --
 
 local map = vim.keymap.set
-
---
---	Quit and Save
---
-
-map('n', '<F4>', '<cmd>quitall<cr>')
-map('n', '<space>q', '<cmd>q<cr>')
-map('n', '<space>w', '<cmd>w<cr>')
-
+local mapps = {
+	e = {'<cmd>NvimTreeToggle<cr>', 'File Explore'},
+	q = {'<cmd>quit<cr>', 'Quit'},
+	Q = {'<cmd>quitall<cr>', 'Exit'},
+	w = {'<cmd>update<cr>', 'Save'},
+	s = {
+		name = 'Search',
+		f = {'<cmd>Telescope find_files<cr>', 'Files'},
+		w = {'<cmd>Telescope live_grep<cr>', 'Words'},
+		k = {'<cmd>Telescope keymaps<cr>', 'Keymaps'},
+		h = {'<cmd>Telescope help_tags<cr>', 'Help Tags'},
+		c = {'<cmd>Telescope commands<cr>,' 'Commands'}.
+	},
+}
 --
 --	Code Edit
 --
@@ -22,14 +27,4 @@ map('n', 'ss', ':split ')
 map('n', 'vss', '<cmd>vsplit<cr>')
 map('n', 'sss', '<cmd>split<cr>')
 
---
---	Rust
---
-
-map('n', '<space>f', '<cmd>RustFmt<cr>')
-
---
---	Explorer
---
-
-map('n', '<space>e', '<cmd>NvimTreeToggle<cr>')
+return mapps
