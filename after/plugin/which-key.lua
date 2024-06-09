@@ -1,5 +1,5 @@
 local whichkey = require("which-key")
-local mapp = require("keymap")
+local mapp = require("config.keymap")
 
 whichkey.register(mapp, {prefix = '<space>'})
 whichkey.setup({

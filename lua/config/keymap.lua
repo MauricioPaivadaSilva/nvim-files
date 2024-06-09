@@ -14,7 +14,13 @@ local mapps = {
 		w = {'<cmd>Telescope live_grep<cr>', 'Words'},
 		k = {'<cmd>Telescope keymaps<cr>', 'Keymaps'},
 		h = {'<cmd>Telescope help_tags<cr>', 'Help Tags'},
-		c = {'<cmd>Telescope commands<cr>,' 'Commands'}.
+		c = {'<cmd>Telescope commands<cr>', 'Commands'},
+	},
+	p = {
+		name = 'Package Manager',
+		p = {'<cmd>Mason<cr>', 'Open Package Manager'},
+		u = {'<cmd>MasonUpdate<cr>', 'Package Update'},
+		D = {'<cmd>MasonUninstallAll<cr>', 'Uninstall All'},
 	},
 }
 --

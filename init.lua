@@ -2,9 +2,9 @@
 --	Este arquivo é usado para ser um direcionador.
 --
 
-require("config")
-require("keymap")
-require("autocmd")
+require("config.config")
+require("config.keymap")
+require("config.autocmd")
 require("lazy_intaller")
 require("pluggin_manager")
 
