@@ -22,6 +22,7 @@ local mapps = {
 		u = {'<cmd>MasonUpdate<cr>', 'Package Update'},
 		D = {'<cmd>MasonUninstallAll<cr>', 'Uninstall All'},
 	},
+	t = {'<cmd>ToggleTerm size=80 dir=. direction=vertical name=desktop<cr>', 'Terminal'}
 }
 --
 --	Code Edit
