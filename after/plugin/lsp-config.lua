@@ -40,6 +40,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
         i = { '<cmd>lua vim.lsp.buf.implementation()<cr>', 'Implementation' },
         s = { '<cmd>lua vim.lsp.buf.signature_help()<cr>', 'Signature help' },
         r = { '<cmd>lua vim.lsp.buf.rename()<cr>', 'Rename' },
+				R = {	'<cmd>LspRestart<cr>', 'Restart LSP'	},
         c = { '<cmd>lua vim.lsp.buf.code_action()<cr>', 'Code action' },
         f = { '<cmd>lua vim.lsp.buf.format()<cr>', 'Format file'},
         e = { '<cmd>lua vim.diagnostic.open_float()<cr>', 'Show diagnostic' }
